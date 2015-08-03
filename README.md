@@ -3,6 +3,7 @@
 
 Motorcycons is an icon font for the Powersport Industry
 *This is currently a work in progress*
+
 *Version 1.0.0*
 
 ###Usage
@@ -12,6 +13,7 @@ Motorcycons is an icon font for the Powersport Industry
 
 ###Build
 ``npm install``
+
 ``gulp``
 
 ## Credits
