@@ -336,41 +336,86 @@ td, th {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.mc-helmet-street-fullface:before {
+.mc-air-filter:before {
   content: "\e600"; }
 
-.mc-helmet-street-openface:before {
+.mc-atv-farm:before {
   content: "\e601"; }
 
-.mc-helmet-street-half:before {
+.mc-atv-sport:before {
   content: "\e602"; }
 
-.mc-helmet-off-road:before {
+.mc-boot:before {
   content: "\e603"; }
 
-.mc-motorcycle-sport:before {
+.mc-engine-v-twin:before {
   content: "\e604"; }
 
-.mc-motorcycle-off-road:before {
+.mc-glove:before {
   content: "\e605"; }
 
-.mc-motorcycle-cruiser:before {
+.mc-goggles-aviator:before {
   content: "\e606"; }
 
-.mc-motorcycle-adventure:before {
+.mc-helmet-off-road:before {
   content: "\e607"; }
 
-.mc-atv-farm:before {
+.mc-helmet-street-fullface:before {
   content: "\e608"; }
 
-.mc-atv-sport:before {
+.mc-helmet-street-half:before {
   content: "\e609"; }
 
-.mc-utv-farm:before {
+.mc-helmet-street-openface:before {
   content: "\e60a"; }
 
-.mc-pwc-single:before {
+.mc-jacket-leather:before {
   content: "\e60b"; }
 
-.mc-snowmobile:before {
+.mc-moped:before {
   content: "\e60c"; }
+
+.mc-motorcycle-adventure:before {
+  content: "\e60d"; }
+
+.mc-motorcycle-cruiser:before {
+  content: "\e60e"; }
+
+.mc-motorcycle-off-road:before {
+  content: "\e60f"; }
+
+.mc-motorcycle-sport:before {
+  content: "\e610"; }
+
+.mc-oil:before {
+  content: "\e611"; }
+
+.mc-piston:before {
+  content: "\e612"; }
+
+.mc-pwc-single:before {
+  content: "\e613"; }
+
+.mc-scooter:before {
+  content: "\e614"; }
+
+.mc-snowmobile:before {
+  content: "\e615"; }
+
+.mc-spark-plug:before {
+  content: "\e616"; }
+
+.mc-sprocket-rear:before {
+  content: "\e617"; }
+
+.mc-suspension:before {
+  content: "\e618"; }
+
+.mc-tire-offroad:before {
+  content: "\e619"; }
+
+.mc-tire-street:before {
+  content: "\e61a"; }
+
+.mc-utv-farm:before {
+  content: "\e61b"; }
