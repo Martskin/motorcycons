@@ -17,5 +17,6 @@ Motorcycons is an icon font for the Powersport Industry
 ``gulp``
 
 ## Credits
+* Introduces Batch. A simple, responsive flexbox grid system.
 * Font built with [IcoMoon.io](https://icomoon.io/)
 * Framework built with [FastShell](https://github.com/HosseinKarami/fastshell)
