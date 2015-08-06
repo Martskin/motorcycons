@@ -1,18 +1,24 @@
+// Style
 
 //----------------------------------*\
 // Config
 //----------------------------------*/
 
 //----------------------------------*\
-// Externals
+// Bourbon
 //----------------------------------*/
 
 @import "bourbon";
 @import "base/base";
 @import "neat";
 
-// Config 
-@import 'modules/_vars.scss';
+//----------------------------------*\
+// Batch Grid
+//----------------------------------*/
+
+@import "batch/batch";
+
+// Reset 
 @import 'modules/_normalize.scss';
 
 //----------------------------------*\
@@ -21,6 +27,6 @@
 
 @import 'partials/_header.scss';
 @import 'partials/_nav.scss';
-@import 'partials/_main.scss';
+@import 'partials/_layout.scss';
 @import 'partials/_footer.scss';
 @import 'partials/_motorcycons.scss';

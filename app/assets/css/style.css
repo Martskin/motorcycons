@@ -173,6 +173,63 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+.batch-row {
+  box-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  -ms-align-items: stretch;
+  -o-align-items: stretch;
+  align-items: stretch;
+  -ms-flex-align: stretch;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  box-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  -o-justify-content: flex-start;
+  justify-content: flex-start;
+  -ms-flex-pack: start;
+  margin: 0 -5px -10px -5px; }
+
+.batch-item {
+  text-align: center;
+  border-width: 0 5px 10px 5px;
+  border-style: solid;
+  border-color: transparent;
+  box-flex: 0;
+  -webkit-flex: 0 0 100%;
+  -moz-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%; }
+  @media screen and (min-width: 40em)  {
+    .batch-item {
+      box-flex: 0;
+      -webkit-flex: 0 0 50%;
+      -moz-flex: 0 0 50%;
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%; } }
+  @media screen and (min-width: 53.75em)  {
+    .batch-item {
+      box-flex: 0;
+      -webkit-flex: 0 0 25%;
+      -moz-flex: 0 0 25%;
+      -ms-flex: 0 0 25%;
+      flex: 0 0 25%; } }
+
+.batch-row_docs {
+  background: #fbe176; }
+  .batch-row_docs .batch-item {
+    background: #dd5900;
+    padding: 10px;
+    border-color: #fbe176; }
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -491,6 +548,15 @@ table {
 
 td, th {
   padding: 0; }
+
+.l-container {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto; }
+  .l-container::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 @font-face {
   font-family: "motorcycons";
