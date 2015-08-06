@@ -1,10 +1,10 @@
 // Docs
 
-.batch-row_docs {
+.batch-g_docs {
 	background: $tan;
-	.batch-item {
+	[class^="batch-u"] {
 		background:$brown;
-		padding:$batch-margin-medium;
+		padding:$batch-gutter;
 		border-color:$tan;
 	}
 }

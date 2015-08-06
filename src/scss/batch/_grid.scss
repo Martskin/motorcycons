@@ -1,6 +1,22 @@
 // Grid
 
-.batch-row {
+$batches : (
+	2,
+	4,
+	8,
+	16,
+	32
+);
+
+@mixin singlebatch($unit-size) {
+	@each $batch in $batches {
+		.batch-u-#{$unit-size}-1-#{$batch} {
+			@include flex(0 0 percentage(1/$batch) );
+		}
+	}
+}
+
+.batch-g {
 	@include align-items(stretch);
 	@include display(flex);
 	@include flex-flow(row wrap);
@@ -8,17 +24,18 @@
 	margin:0 (-$batch-gutter/2) (-$batch-gutter) (-$batch-gutter/2);
 }
 
-.batch-item {
+.batch-u {
 	text-align:center;
 	border-width:0 $batch-gutter/2 $batch-gutter $batch-gutter/2;
 	border-style:solid;
 	border-color:transparent;
 	@include flex(0 0 100%);
-	@include media($medium-screen-up) {
-		@include flex(0 0 50%);
-	}
-	@include media($large-screen-up) {
-		@include flex(0 0 25%);
-	}
 }
 
+@include media($medium-screen-up) {
+	@include singlebatch('md');
+}
+
+@include media($large-screen-up) {
+	@include singlebatch('lg');
+}

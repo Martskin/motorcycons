@@ -173,7 +173,7 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-.batch-row {
+.batch-g {
   box-align: stretch;
   -webkit-align-items: stretch;
   -moz-align-items: stretch;
@@ -198,7 +198,7 @@ html {
   -ms-flex-pack: start;
   margin: 0 -5px -10px -5px; }
 
-.batch-item {
+.batch-u {
   text-align: center;
   border-width: 0 5px 10px 5px;
   border-style: solid;
@@ -208,24 +208,74 @@ html {
   -moz-flex: 0 0 100%;
   -ms-flex: 0 0 100%;
   flex: 0 0 100%; }
-  @media screen and (min-width: 40em)  {
-    .batch-item {
-      box-flex: 0;
-      -webkit-flex: 0 0 50%;
-      -moz-flex: 0 0 50%;
-      -ms-flex: 0 0 50%;
-      flex: 0 0 50%; } }
-  @media screen and (min-width: 53.75em)  {
-    .batch-item {
-      box-flex: 0;
-      -webkit-flex: 0 0 25%;
-      -moz-flex: 0 0 25%;
-      -ms-flex: 0 0 25%;
-      flex: 0 0 25%; } }
 
-.batch-row_docs {
+@media screen and (min-width: 40em)  {
+  .batch-u-md-1-2 {
+    box-flex: 0;
+    -webkit-flex: 0 0 50%;
+    -moz-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%; }
+  .batch-u-md-1-4 {
+    box-flex: 0;
+    -webkit-flex: 0 0 25%;
+    -moz-flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%; }
+  .batch-u-md-1-8 {
+    box-flex: 0;
+    -webkit-flex: 0 0 12.5%;
+    -moz-flex: 0 0 12.5%;
+    -ms-flex: 0 0 12.5%;
+    flex: 0 0 12.5%; }
+  .batch-u-md-1-16 {
+    box-flex: 0;
+    -webkit-flex: 0 0 6.25%;
+    -moz-flex: 0 0 6.25%;
+    -ms-flex: 0 0 6.25%;
+    flex: 0 0 6.25%; }
+  .batch-u-md-1-32 {
+    box-flex: 0;
+    -webkit-flex: 0 0 3.125%;
+    -moz-flex: 0 0 3.125%;
+    -ms-flex: 0 0 3.125%;
+    flex: 0 0 3.125%; } }
+
+@media screen and (min-width: 53.75em)  {
+  .batch-u-lg-1-2 {
+    box-flex: 0;
+    -webkit-flex: 0 0 50%;
+    -moz-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%; }
+  .batch-u-lg-1-4 {
+    box-flex: 0;
+    -webkit-flex: 0 0 25%;
+    -moz-flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%; }
+  .batch-u-lg-1-8 {
+    box-flex: 0;
+    -webkit-flex: 0 0 12.5%;
+    -moz-flex: 0 0 12.5%;
+    -ms-flex: 0 0 12.5%;
+    flex: 0 0 12.5%; }
+  .batch-u-lg-1-16 {
+    box-flex: 0;
+    -webkit-flex: 0 0 6.25%;
+    -moz-flex: 0 0 6.25%;
+    -ms-flex: 0 0 6.25%;
+    flex: 0 0 6.25%; }
+  .batch-u-lg-1-32 {
+    box-flex: 0;
+    -webkit-flex: 0 0 3.125%;
+    -moz-flex: 0 0 3.125%;
+    -ms-flex: 0 0 3.125%;
+    flex: 0 0 3.125%; } }
+
+.batch-g_docs {
   background: #fbe176; }
-  .batch-row_docs .batch-item {
+  .batch-g_docs [class^="batch-u"] {
     background: #dd5900;
     padding: 10px;
     border-color: #fbe176; }
