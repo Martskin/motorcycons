@@ -7,6 +7,7 @@ var gulp = require('gulp'),
     header  = require('gulp-header'),
     rename = require('gulp-rename'),
     minifyCSS = require('gulp-minify-css'),
+    neat = require('node-neat').includePaths,
     package = require('./package.json');
 
 
@@ -24,7 +25,10 @@ var banner = [
 
 gulp.task('css', function () {
     return gulp.src('src/scss/style.scss')
-    .pipe(sass({errLogToConsole: true}))
+    .pipe(sass({
+      errLogToConsole: true,
+      includePaths: ['styles'].concat(neat)
+    }))
     .pipe(autoprefixer('last 4 version'))
     .pipe(gulp.dest('app/assets/css'))
     .pipe(minifyCSS())
