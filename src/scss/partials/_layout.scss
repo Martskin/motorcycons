@@ -1,0 +1,5 @@
+// Layout
+
+.l-container {
+	@include outer-container($container-width);
+}

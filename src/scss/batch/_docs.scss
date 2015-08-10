@@ -1,0 +1,62 @@
+// Docs
+
+// Colors
+$doc-tan:	#fbe176;
+$doc-brown:	#dd5900;
+$doc-gray-dark: #666666;
+$doc-gray-medium: #dfdfdf;
+$doc-gray-light: #f9f9f9;
+$doc-blue-dark: #183691;
+$doc-blue-dark-light: #daf8fd;
+$doc-purple: #795da3;
+$doc-green: #63a35c;
+
+body {
+	background:$doc-gray-medium;
+}
+
+pre {
+	font-size:0.8em;
+	line-height:1.25em;
+	font-family: Consolas,monaco,monospace; 
+	color:$doc-gray-dark;
+	white-space: pre-line;
+	background:$doc-gray-light;
+	border-radius:4px;
+	padding:5px;
+}
+
+code {
+	font-size:0.8em;
+	line-height:1.25em;
+	font-family: Consolas,monaco,monospace; 
+	.code-o {
+		color:$doc-green;
+	}
+	.code-c {
+		color:$doc-purple;
+	}
+	.code-n {
+		color:$doc-blue-dark;
+	}
+}
+
+.batch-g_docs {
+	background:$doc-blue-dark-light;
+	margin-bottom:30px;
+	[class^="batch-u"] {
+		background:#ffffff;
+		padding:$batch-gutter;
+		border-color:$doc-blue-dark-light;
+		p {
+			font-size: 0.75em;
+			line-height: 1.25em;
+			margin-bottom: 10px;
+			text-align: left;
+			span {
+				// font-size: 1.5em;
+				font-weight: bold;
+			}
+		}
+	}
+}
