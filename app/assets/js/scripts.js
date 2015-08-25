@@ -4,7 +4,7 @@
  * https://github.com/Martskin/motorcycons
  * @author Martin Hofmann
  * @version 1.0.0
- * Copyright 2015. SIL OFL 1.1 licensed.
+ * Copyright 2015. OFL-1.1 licensed.
  */
 (function ($, window, document, undefined) {
 
