@@ -13,7 +13,7 @@ Motorcycons is an icon font for the Powersports Industry
 <span class="mc-sprocket-rear"></span>
 ```
 
-[![Motorcycons Sample](https://cloud.githubusercontent.com/assets/3717760/9078013/71b6bd04-3b03-11e5-8d6d-53d561adbd71.png)](https://martskin.github.io/motorcycons)
+[![Motorcycons Sample](https://cloud.githubusercontent.com/assets/3717760/9476166/54cc952e-4b39-11e5-8f9c-64ae73858138.png)](https://martskin.github.io/motorcycons)
 
 [View all Motorcycons »](https://martskin.github.io/motorcycons)
 
