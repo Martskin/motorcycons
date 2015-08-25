@@ -11,7 +11,7 @@
   'use strict';
 
   $(function () {
-    // FastShell
+    $('body').addClass('is-loaded');
   });
 
 })(jQuery, window, document);

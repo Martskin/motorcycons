@@ -17,6 +17,15 @@ h6 {
   font-size: $base-font-size;
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
+  font-weight: 300;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+h3 {
+  font-size: $xlarge-font-size;
 }
 
 p {
@@ -46,10 +55,15 @@ hr {
   border-right: none;
   border-top: none;
   margin: $base-spacing 0;
+  opacity: 0.5;
 }
 
 img,
 picture {
   margin: 0;
   max-width: 100%;
+}
+
+::selection {
+  background:rgba($orange, 0.25);
 }

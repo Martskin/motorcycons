@@ -13,7 +13,7 @@ $font-path: "../fonts/";
 //----------------------------------*/
 
 $icons : (
-	mc-air-filter: "\e600",
+	mc-tire-atv: "\e600",
 	mc-atv-farm: "\e601",
 	mc-atv-sport: "\e602",
 	mc-boot: "\e603",
@@ -63,6 +63,7 @@ $icons : (
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
+	display:inline-block;
 
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
@@ -78,5 +79,99 @@ $icons : (
 		&:before {
 			content: $icon;
 		}
+	}
+}
+
+//----------------------------------*\
+// Modifier Classes
+//----------------------------------*/
+
+.mc-spin {
+  -webkit-animation: 1.25s linear 0s normal none infinite running mc-spin;
+          animation: 1.25s linear 0s normal none infinite running mc-spin;
+}
+
+.mc-rumble {
+  -webkit-animation: 0.15s linear 0s normal none infinite running mc-rumble;
+          animation: 0.15s linear 0s normal none infinite running mc-rumble;
+}
+
+.mc-flip-horizontal {
+  -webkit-transform: scale(-1, 1);
+      -ms-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.mc-flip-vertical {
+  -webkit-transform: scale(1, -1);
+      -ms-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+@-webkit-keyframes mc-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+}
+}
+
+@keyframes mc-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes mc-rumble {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+
+  30% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+}
+
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+
+  100% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+	}
+}
+
+@keyframes mc-rumble {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+
+  30% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+}
+
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+
+  100% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
 	}
 }

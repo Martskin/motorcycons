@@ -1,5 +1,125 @@
 // App
 
-.footer {
-
+header {
+	text-align:center;
 }
+
+.header__title {
+	font-size:45px;
+	margin-bottom:$xsmall-spacing;
+	@include media($small-screen-only) {
+		[class^="mc-"] {
+			display: block;
+		}
+	}
+	@include media($medium-screen) {
+		font-size:75px;
+	}
+}
+
+.header__sub {
+	font-size:15px;
+	margin-bottom:$large-spacing;
+	@include media($medium-screen) {
+		font-size:24px;
+	}
+}
+
+.icon-grid {
+	text-align:center;
+	[class^="mc-"] {
+		font-size: 55px;
+		padding:$xsmall-spacing $xsmall-spacing 0;
+		display: block;
+		@include media($medium-screen) {
+			font-size: 75px;
+		}
+		@include media($large-screen) {
+			font-size: 100px;
+		}
+	}
+
+	@mixin nth-children {
+		@for $i from 1 to 29 {
+			&:nth-child(#{$i}) {
+				transition-delay: ($i * 0.1) + s;
+			}
+		}
+	}
+
+	li {
+		transform: scale(0);
+		transition-property: transform;
+		transition-duration: 1s;
+		transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+		.is-loaded & {
+			transform: scale(1);
+		}
+		@include nth-children;
+		&:hover {
+			color:$green;
+			@include transition(color 0.25s linear);
+			code {
+				opacity: 1;
+			}
+		}
+		&:nth-child(odd) {
+			&:hover {
+				color: $red;
+			}
+		}
+		code {
+			color:$base-font-color;
+			font-size:$smaller-font-size;
+			opacity:0.3;
+		}
+	}
+}
+
+.icon-list {
+	[class^="mc-"] {
+		font-size: 45px;
+		vertical-align: middle;
+	}
+}
+
+pre {
+	font-size: $xsmall-font-size;
+	@include media($medium-screen) {
+		font-size: $small-font-size;
+	}
+}
+
+code {
+	line-height:1.25em;
+	font-family: $code-font-family; 
+	color:$medium-gray;
+	.code-o {
+		color:$code-object-color;
+	}
+	.code-c {
+		color:$code-class-color;
+	}
+	.code-n {
+		color:$code-name-color;
+	}
+}
+
+.type--large {
+	font-size:$medium-font-size;
+}
+
+.type--small {
+	font-size:$small-font-size;
+}
+
+.type--highlight {
+	color:$yellow;
+}
+
+.footer {
+	padding-top:$xxlarge-spacing;
+	padding-bottom:$xxlarge-spacing;
+	font-size: $small-font-size;
+}
+
