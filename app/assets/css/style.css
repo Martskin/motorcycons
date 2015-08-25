@@ -1435,10 +1435,38 @@ html {
 
 .l-row--black {
   color: #ffffff;
-  background-color: #1b1d27; }
+  background-color: #1b1d27;
+  -webkit-animation: background-fade 10s infinite;
+          animation: background-fade 10s infinite; }
 
 .l-row--gray--light {
   background-color: #f9f9f9; }
+
+.l-row--hero {
+  position: relative; }
+  .l-row--hero:before {
+    font-family: "motorcycons";
+    font-size: 250px;
+    line-height: 1em;
+    position: absolute;
+    bottom: -30px;
+    left: calc(50% - 125px);
+    opacity: 0.15;
+    content: '\e60d';
+    display: block; }
+    @media screen and (min-width: 600px) {
+      .l-row--hero:before {
+        font-size: 450px;
+        bottom: -80px;
+        left: calc(50% - 225px); } }
+    @media screen and (min-width: 900px) {
+      .l-row--hero:before {
+        font-size: 700px;
+        bottom: -130px;
+        left: calc(50% - 350px); } }
+  .l-row--hero .l-container {
+    position: relative;
+    z-index: 2; }
 
 .l-container {
   max-width: 1080px;
@@ -1453,6 +1481,32 @@ html {
   margin-bottom: 3em; }
   .l-section:last-of-type {
     margin-bottom: 0; }
+
+@-webkit-keyframes background-fade {
+  0% {
+    background-color: #1b1d27; }
+
+  50% {
+    background-color: #4a551e; }
+
+  75% {
+    background-color: #8A322E; }
+
+  100% {
+    background-color: #1b1d27; } }
+
+@keyframes background-fade {
+  0% {
+    background-color: #1b1d27; }
+
+  50% {
+    background-color: #4a551e; }
+
+  75% {
+    background-color: #8A322E; }
+
+  100% {
+    background-color: #1b1d27; } }
 
 header {
   text-align: center; }
@@ -1479,9 +1533,17 @@ header {
     font-size: 55px;
     padding: 0.375em;
     display: block; }
+    @media screen and (min-width: 600px) {
+      .icon-grid [class^="mc-"] {
+        font-size: 75px; } }
+    @media screen and (min-width: 900px) {
+      .icon-grid [class^="mc-"] {
+        font-size: 100px; } }
     .icon-grid [class^="mc-"]:hover {
-      color: #ff762f;
+      color: #4a551e;
       transition: color 0.25s linear; }
+  .icon-grid li:nth-child(odd) [class^="mc-"]:hover {
+    color: #8A322E; }
 
 code {
   font-size: 0.75em;

@@ -28,9 +28,24 @@ header {
 		font-size: 55px;
 		padding:$xsmall-spacing;
 		display: block;
+		@include media($medium-screen) {
+			font-size: 75px;
+		}
+		@include media($large-screen) {
+			font-size: 100px;
+		}
 		&:hover {
-			color:$orange;
+			color:$green;
 			@include transition(color 0.25s linear);
+		}
+	}
+	li {
+		&:nth-child(odd) {
+			[class^="mc-"] {
+				&:hover {
+					color: $red;
+				}
+			}
 		}
 	}
 }
@@ -46,3 +61,4 @@ code {
 	padding-bottom:$xxlarge-spacing;
 	font-size: $small-font-size;
 }
+

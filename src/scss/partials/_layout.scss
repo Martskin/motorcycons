@@ -17,10 +17,40 @@
 .l-row--black {
 	color:$white;
 	background-color:$black;
+	animation:background-fade 10s infinite;
 }
 
 .l-row--gray--light {
 	background-color:$lighter-gray;
+}
+
+.l-row--hero {
+	position: relative;
+	&:before {
+		font-family: "motorcycons";
+		font-size: 250px;
+		line-height: 1em;
+		position:absolute;
+		bottom:-30px;
+		left:calc(50% - 125px);
+		opacity: 0.15;
+		content:'\e60d';
+		display: block;
+		@include media($medium-screen) {
+			font-size: 450px;
+			bottom:-80px;
+			left:calc(50% - 225px);
+		}
+		@include media($large-screen) {
+			font-size: 700px;
+			bottom:-130px;
+			left:calc(50% - 350px);
+		}
+	}
+	.l-container {
+		position:relative;
+		z-index: 2;
+	}
 }
 
 .l-container {
@@ -34,3 +64,17 @@
 	}
 }
 
+@keyframes background-fade {
+    0% {
+      background-color:$black;
+    }
+    50% {
+      background-color:$green;
+    }
+	75% {
+      background-color:$red;
+    }
+    100% {
+      background-color:$black;
+    }
+}
