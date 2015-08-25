@@ -19,9 +19,18 @@ header {
 
 .header__sub {
 	font-size:15px;
-	margin-bottom:$large-spacing;
 	@include media($medium-screen) {
 		font-size:24px;
+	}
+}
+
+.header__content {
+	max-width:600px;
+	margin:0 auto $large-spacing;
+	@include media($small-screen-only) {
+		font-size: $small-font-size;
+		line-height:1.25em;
+		margin-bottom:$base-spacing;
 	}
 }
 
