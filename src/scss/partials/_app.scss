@@ -1,5 +1,48 @@
 // App
 
-.footer {
+header {
+	text-align:center;
+}
 
+.header__title {
+	font-size:45px;
+	font-weight:400;
+	margin-bottom:$xsmall-spacing;
+	@include media($medium-screen) {
+		font-size:75px;
+	}
+}
+
+.header__sub {
+	font-size:15px;
+	font-weight:300;
+	margin-bottom:$large-spacing;
+	@include media($medium-screen) {
+		font-size:24px;
+	}
+}
+
+.icon-grid {
+	text-align:center;
+	[class^="mc-"] {
+		font-size: 55px;
+		padding:$xsmall-spacing;
+		display: block;
+		&:hover {
+			color:$orange;
+			@include transition(color 0.25s linear);
+		}
+	}
+}
+
+code {
+	font-size:$smaller-font-size;
+	line-height:1.25em;
+	font-family: $code-font-family; 
+}
+
+.footer {
+	padding-top:$xxlarge-spacing;
+	padding-bottom:$xxlarge-spacing;
+	font-size: $small-font-size;
 }

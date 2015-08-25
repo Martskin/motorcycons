@@ -2,15 +2,25 @@
 
 .l-row {
 	padding:$base-spacing $small-spacing;
-	overflow:hidden;
 	@include media($medium-screen) {
 		padding:$large-spacing $small-spacing;
+	}
+}
+
+.l-row--padding {
+	@include media($medium-screen) {
+		padding-left:$xxlarge-spacing;
+		padding-right:$xxlarge-spacing;
 	}
 }
 
 .l-row--black {
 	color:$white;
 	background-color:$black;
+}
+
+.l-row--gray--light {
+	background-color:$lighter-gray;
 }
 
 .l-container {
