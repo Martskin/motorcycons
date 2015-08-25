@@ -53,3 +53,7 @@ picture {
   margin: 0;
   max-width: 100%;
 }
+
+::selection {
+  background:rgba($orange, 0.25);
+}

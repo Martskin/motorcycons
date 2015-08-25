@@ -8,6 +8,11 @@ header {
 	font-size:45px;
 	font-weight:400;
 	margin-bottom:$xsmall-spacing;
+	@include media($small-screen-only) {
+		[class^="mc-"] {
+			display: block;
+		}
+	}
 	@include media($medium-screen) {
 		font-size:75px;
 	}
@@ -26,7 +31,7 @@ header {
 	text-align:center;
 	[class^="mc-"] {
 		font-size: 55px;
-		padding:$xsmall-spacing;
+		padding:$xsmall-spacing $xsmall-spacing 0;
 		display: block;
 		@include media($medium-screen) {
 			font-size: 75px;
@@ -34,17 +39,35 @@ header {
 		@include media($large-screen) {
 			font-size: 100px;
 		}
+	}
+
+	@mixin nth-children {
+		@for $i from 1 to 28 {
+			&:nth-child(#{$i}) {
+				transition-delay: ($i * 0.1) + s;
+			}
+		}
+	}
+
+	li {
+		transform: scale(0);
+		transition-property: transform;
+		transition-duration: 1s;
+		transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+		.is-loaded & {
+			transform: scale(1);
+		}
+		@include nth-children;
 		&:hover {
 			color:$green;
 			@include transition(color 0.25s linear);
+			code {
+				opacity: 1;
+			}
 		}
-	}
-	li {
 		&:nth-child(odd) {
-			[class^="mc-"] {
-				&:hover {
-					color: $red;
-				}
+			&:hover {
+				color: $red;
 			}
 		}
 	}
@@ -53,7 +76,9 @@ header {
 code {
 	font-size:$smaller-font-size;
 	line-height:1.25em;
+	display:inline-block;
 	font-family: $code-font-family; 
+	opacity:0.3;
 }
 
 .footer {
