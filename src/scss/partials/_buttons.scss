@@ -24,10 +24,12 @@ button {
   max-width: 220px;
   @include media($medium-screen) {
     display: inline-block;
-    margin-right: $base-spacing;
     padding: 20px 15px;
     max-width: none;
-    & + &:last-of-type {
+    &:not(:only-of-type) {
+      margin-right: $base-spacing;
+    }
+    &:last-of-type {
       margin-right: 0;
     }
   }
@@ -71,7 +73,12 @@ button {
   font-size: $small-font-size;  
   padding:0.75em 0.9em;
   @include media($large-screen) {
-    margin-right: $small-spacing;
+    &:not(:only-of-type) {
+      margin-right: $small-spacing;
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
   }
 }
 

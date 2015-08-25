@@ -1393,10 +1393,11 @@ html {
   @media screen and (min-width: 600px) {
     .btn, button {
       display: inline-block;
-      margin-right: 1.5em;
       padding: 20px 15px;
       max-width: none; }
-      .btn + .btn:last-of-type, button + button:last-of-type {
+      .btn:not(:only-of-type), button:not(:only-of-type) {
+        margin-right: 1.5em; }
+      .btn:last-of-type, button:last-of-type {
         margin-right: 0; } }
   @media screen and (min-width: 900px) {
     .btn, button {
@@ -1426,8 +1427,10 @@ html {
   font-size: 0.8em;
   padding: 0.75em 0.9em; }
   @media screen and (min-width: 900px) {
-    .btn--small {
-      margin-right: 0.75em; } }
+    .btn--small:not(:only-of-type) {
+      margin-right: 0.75em; }
+    .btn--small:last-of-type {
+      margin-right: 0; } }
 
 .btn_notes {
   font-size: 0.7em;
@@ -1649,11 +1652,14 @@ header {
       opacity: 0.3; }
 
 .icon-list [class^="mc-"] {
-  font-size: 45px; }
+  font-size: 45px;
+  vertical-align: middle; }
 
-@media screen and (max-width: 600px)  {
-  pre {
-    font-size: 0.6em; } }
+pre {
+  font-size: 0.6em; }
+  @media screen and (min-width: 600px) {
+    pre {
+      font-size: 0.8em; } }
 
 code {
   line-height: 1.25em;

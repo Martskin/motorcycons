@@ -79,12 +79,14 @@ header {
 .icon-list {
 	[class^="mc-"] {
 		font-size: 45px;
+		vertical-align: middle;
 	}
 }
 
 pre {
-	@include media($small-screen-only) {
-		font-size: $xsmall-font-size;
+	font-size: $xsmall-font-size;
+	@include media($medium-screen) {
+		font-size: $small-font-size;
 	}
 }
 
