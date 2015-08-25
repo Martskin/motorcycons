@@ -1623,6 +1623,8 @@ header {
       transition-delay: 2.6s; }
     .icon-grid li:nth-child(27) {
       transition-delay: 2.7s; }
+    .icon-grid li:nth-child(28) {
+      transition-delay: 2.8s; }
     .icon-grid li:hover {
       color: #4a551e;
       transition: color 0.25s linear; }

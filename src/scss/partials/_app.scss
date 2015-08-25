@@ -42,7 +42,7 @@ header {
 	}
 
 	@mixin nth-children {
-		@for $i from 1 to 28 {
+		@for $i from 1 to 29 {
 			&:nth-child(#{$i}) {
 				transition-delay: ($i * 0.1) + s;
 			}
