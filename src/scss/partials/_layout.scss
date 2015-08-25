@@ -1,5 +1,26 @@
 // Layout
 
+.l-row {
+	padding:$base-spacing $small-spacing;
+	overflow:hidden;
+	@include media($medium-screen) {
+		padding:$large-spacing $small-spacing;
+	}
+}
+
+.l-row--amber {
+	color:$white;
+	background-color:$black;
+}
+
 .l-container {
 	@include outer-container($container-width);
 }
+
+.l-section {
+	margin-bottom:$large-spacing;
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
