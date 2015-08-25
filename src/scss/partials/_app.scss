@@ -6,7 +6,6 @@ header {
 
 .header__title {
 	font-size:45px;
-	font-weight:400;
 	margin-bottom:$xsmall-spacing;
 	@include media($small-screen-only) {
 		[class^="mc-"] {
@@ -20,7 +19,6 @@ header {
 
 .header__sub {
 	font-size:15px;
-	font-weight:300;
 	margin-bottom:$large-spacing;
 	@include media($medium-screen) {
 		font-size:24px;
@@ -70,15 +68,51 @@ header {
 				color: $red;
 			}
 		}
+		code {
+			color:$base-font-color;
+			font-size:$smaller-font-size;
+			opacity:0.3;
+		}
+	}
+}
+
+.icon-list {
+	[class^="mc-"] {
+		font-size: 45px;
+	}
+}
+
+pre {
+	@include media($small-screen-only) {
+		font-size: $xsmall-font-size;
 	}
 }
 
 code {
-	font-size:$smaller-font-size;
 	line-height:1.25em;
-	display:inline-block;
 	font-family: $code-font-family; 
-	opacity:0.3;
+	color:$medium-gray;
+	.code-o {
+		color:$code-object-color;
+	}
+	.code-c {
+		color:$code-class-color;
+	}
+	.code-n {
+		color:$code-name-color;
+	}
+}
+
+.type--large {
+	font-size:$medium-font-size;
+}
+
+.type--small {
+	font-size:$small-font-size;
+}
+
+.type--highlight {
+	color:$yellow;
 }
 
 .footer {

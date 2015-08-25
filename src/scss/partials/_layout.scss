@@ -7,17 +7,15 @@
 	}
 }
 
-.l-row--padding {
-	@include media($medium-screen) {
-		padding-left:$xxlarge-spacing;
-		padding-right:$xxlarge-spacing;
-	}
-}
-
 .l-row--black {
 	color:$white;
 	background-color:$black;
-	animation:background-fade 10s infinite;
+	animation:background-cycle 10s infinite;
+}
+
+.l-row--green {
+	color:$white;
+	background-color:$green;
 }
 
 .l-row--gray--light {
@@ -64,7 +62,7 @@
 	}
 }
 
-@keyframes background-fade {
+@keyframes background-cycle {
     0% {
       background-color:$black;
     }

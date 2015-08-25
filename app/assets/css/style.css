@@ -469,7 +469,14 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Oswald', sans-serif;
   font-size: 1em;
   line-height: 1.2;
-  margin: 0 0 0.75em; }
+  margin: 0 0 0.75em;
+  font-weight: 300; }
+
+h1 {
+  font-weight: 400; }
+
+h3 {
+  font-size: 2em; }
 
 p {
   margin: 0 0 0.75em; }
@@ -488,7 +495,8 @@ hr {
   border-left: none;
   border-right: none;
   border-top: none;
-  margin: 1.5em 0; }
+  margin: 1.5em 0;
+  opacity: 0.5; }
 
 img, picture {
   margin: 0;
@@ -1443,16 +1451,15 @@ html {
     .l-row {
       padding: 3em 0.75em; } }
 
-@media screen and (min-width: 600px) {
-  .l-row--padding {
-    padding-left: 6em;
-    padding-right: 6em; } }
-
 .l-row--black {
   color: #ffffff;
   background-color: #1b1d27;
-  -webkit-animation: background-fade 10s infinite;
-          animation: background-fade 10s infinite; }
+  -webkit-animation: background-cycle 10s infinite;
+          animation: background-cycle 10s infinite; }
+
+.l-row--green {
+  color: #ffffff;
+  background-color: #4a551e; }
 
 .l-row--gray--light {
   background-color: #f9f9f9; }
@@ -1497,7 +1504,7 @@ html {
   .l-section:last-of-type {
     margin-bottom: 0; }
 
-@-webkit-keyframes background-fade {
+@-webkit-keyframes background-cycle {
   0% {
     background-color: #1b1d27; }
 
@@ -1510,7 +1517,7 @@ html {
   100% {
     background-color: #1b1d27; } }
 
-@keyframes background-fade {
+@keyframes background-cycle {
   0% {
     background-color: #1b1d27; }
 
@@ -1528,7 +1535,6 @@ header {
 
 .header__title {
   font-size: 45px;
-  font-weight: 400;
   margin-bottom: 0.375em; }
   @media screen and (max-width: 600px)  {
     .header__title [class^="mc-"] {
@@ -1539,7 +1545,6 @@ header {
 
 .header__sub {
   font-size: 15px;
-  font-weight: 300;
   margin-bottom: 3em; }
   @media screen and (min-width: 600px) {
     .header__sub {
@@ -1632,13 +1637,37 @@ header {
         opacity: 1; }
     .icon-grid li:nth-child(odd):hover {
       color: #8A322E; }
+    .icon-grid li code {
+      color: #1b1d27;
+      font-size: 0.65em;
+      opacity: 0.3; }
+
+.icon-list [class^="mc-"] {
+  font-size: 45px; }
+
+@media screen and (max-width: 600px)  {
+  pre {
+    font-size: 0.6em; } }
 
 code {
-  font-size: 0.65em;
   line-height: 1.25em;
-  display: inline-block;
   font-family: Consolas, monaco, monospace;
-  opacity: 0.3; }
+  color: #dfdfdf; }
+  code .code-o {
+    color: #e54040; }
+  code .code-c {
+    color: #2bc354; }
+  code .code-n {
+    color: #f1e63a; }
+
+.type--large {
+  font-size: 1.1em; }
+
+.type--small {
+  font-size: 0.8em; }
+
+.type--highlight {
+  color: #f1e63a; }
 
 .footer {
   padding-top: 6em;
