@@ -1415,13 +1415,19 @@ html {
     background-color: #ffffff; }
     .btn.btn--secondary:hover, .btn.btn--secondary:focus, button.btn--secondary:hover, button.btn--secondary:focus {
       background-color: #f9f9f9; }
+  .btn.btn--tertiary, button.btn--tertiary {
+    color: #4a551e;
+    border: 1px solid #4a551e;
+    background-color: #ffffff; }
+    .btn.btn--tertiary:hover, .btn.btn--tertiary:focus, button.btn--tertiary:hover, button.btn--tertiary:focus {
+      background-color: #f9f9f9; }
 
 .btn--small {
   font-size: 0.8em;
-  padding: 0.75em 0.9em;
-  margin-right: 0.75em; }
-  .btn--small + .btn--small:last-of-type {
-    margin-right: 0; }
+  padding: 0.75em 0.9em; }
+  @media screen and (min-width: 900px) {
+    .btn--small {
+      margin-right: 0.75em; } }
 
 .btn_notes {
   font-size: 0.7em;

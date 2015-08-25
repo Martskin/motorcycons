@@ -1,7 +1,7 @@
 
 #Motorcycons
 
-Motorcycons is an icon font for the Powersport Industry
+Motorcycons is an icon font for the Powersports Industry
 
 *Version 1.0.0*
 

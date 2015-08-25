@@ -56,14 +56,22 @@ button {
       background-color:$lighter-gray;
     }
   }
+  &.btn--tertiary {
+    color:$green;
+    border:1px solid $green;
+    background-color:$white;
+    &:hover,
+    &:focus {
+      background-color:$lighter-gray;
+    }
+  }
 }
 
 .btn--small {
   font-size: $small-font-size;  
   padding:0.75em 0.9em;
-  margin-right: $small-spacing;
-  & + &:last-of-type {
-    margin-right: 0;
+  @include media($large-screen) {
+    margin-right: $small-spacing;
   }
 }
 
