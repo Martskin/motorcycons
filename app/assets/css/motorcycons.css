@@ -111,12 +111,12 @@
   content: "\e61b"; }
 
 .mc-spin {
-  -webkit-animation: 1.25s linear 0s normal none infinite running mc-spin;
-  animation: 1.25s linear 0s normal none infinite running mc-spin; }
+  -webkit-animation: mc-spin 1.25s infinite linear;
+  animation: mc-spin 1.25s infinite linear; }
 
 .mc-rumble {
-  -webkit-animation: 0.15s linear 0s normal none infinite running mc-rumble;
-  animation: 0.15s linear 0s normal none infinite running mc-rumble; }
+  -webkit-animation: mc-rumble 0.15s infinite linear;
+  animation: mc-rumble 0.15s infinite linear; }
 
 .mc-flip-horizontal {
   -webkit-transform: scale(-1, 1);
