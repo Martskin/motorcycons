@@ -1647,6 +1647,28 @@ header {
       transition-delay: 2.7s; }
     .icon-grid li:nth-child(28) {
       transition-delay: 2.8s; }
+    .icon-grid li:nth-child(29) {
+      transition-delay: 2.9s; }
+    .icon-grid li:nth-child(30) {
+      transition-delay: 3s; }
+    .icon-grid li:nth-child(31) {
+      transition-delay: 3.1s; }
+    .icon-grid li:nth-child(32) {
+      transition-delay: 3.2s; }
+    .icon-grid li:nth-child(33) {
+      transition-delay: 3.3s; }
+    .icon-grid li:nth-child(34) {
+      transition-delay: 3.4s; }
+    .icon-grid li:nth-child(35) {
+      transition-delay: 3.5s; }
+    .icon-grid li:nth-child(36) {
+      transition-delay: 3.6s; }
+    .icon-grid li:nth-child(37) {
+      transition-delay: 3.7s; }
+    .icon-grid li:nth-child(38) {
+      transition-delay: 3.8s; }
+    .icon-grid li:nth-child(39) {
+      transition-delay: 3.9s; }
     .icon-grid li:hover {
       color: #4a551e;
       transition: color 0.25s linear; }
