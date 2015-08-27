@@ -49,20 +49,22 @@ header {
 	}
 
 	@mixin nth-children {
-		@for $i from 1 to 29 {
-			&:nth-child(#{$i}) {
+		@for $i from 1 to 40 {
+			&:nth-child(#{$i}) [class^="mc-"] {
 				transition-delay: ($i * 0.1) + s;
 			}
 		}
 	}
 
 	li {
-		transform: scale(0);
-		transition-property: transform;
-		transition-duration: 1s;
-		transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-		.is-loaded & {
-			transform: scale(1);
+		[class^="mc-"] {
+			transform: scale(0);
+			transition-property: transform;
+			transition-duration: 1s;
+			transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+			.is-loaded & {
+				transform: scale(1);
+			}
 		}
 		@include nth-children;
 		&:hover {

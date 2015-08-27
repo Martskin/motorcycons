@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'motorcycons';
-	src:url('fonts/motorcycons.eot?-l6tyn8');
-	src:url('fonts/motorcycons.eot?#iefix-l6tyn8') format('embedded-opentype'),
-		url('fonts/motorcycons.ttf?-l6tyn8') format('truetype'),
-		url('fonts/motorcycons.woff?-l6tyn8') format('woff'),
-		url('fonts/motorcycons.svg?-l6tyn8#motorcycons') format('svg');
+	src:url('fonts/motorcycons.eot?ke6iqj');
+	src:url('fonts/motorcycons.eot?#iefixke6iqj') format('embedded-opentype'),
+		url('fonts/motorcycons.ttf?ke6iqj') format('truetype'),
+		url('fonts/motorcycons.woff?ke6iqj') format('woff'),
+		url('fonts/motorcycons.svg?ke6iqj#motorcycons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,6 +23,30 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.mc-air-filter:before {
+	content: "\e61c";
+}
+.mc-chain:before {
+	content: "\e61d";
+}
+.mc-gas-tank:before {
+	content: "\e61e";
+}
+.mc-motorcycle-bobber:before {
+	content: "\e61f";
+}
+.mc-motorcycle-cafe-racer:before {
+	content: "\e620";
+}
+.mc-motorcycle-chopper:before {
+	content: "\e621";
+}
+.mc-motorcycle-trike:before {
+	content: "\e622";
+}
+.mc-utv-sport:before {
+	content: "\e623";
+}
 .mc-tire-atv:before {
 	content: "\e600";
 }
