@@ -5,7 +5,7 @@ Motorcycons is an icon font for the Powersports Industry
 
 *Version 1.0.0*
 
-###Usage
+### Usage
 ```html
 <span class="mc-motorcycle-sport"></span>
 <span class="mc-helmet-off-road"></span>
@@ -20,7 +20,7 @@ Motorcycons is an icon font for the Powersports Industry
 ## Documentation
 [Motorcycons Documentation](https://martskin.github.io/motorcycons)
 
-###Docs Build
+### Docs Build
 ``npm install``
 
 ``gulp``
