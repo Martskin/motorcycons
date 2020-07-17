@@ -1,5 +1,5 @@
 
-#Motorcycons
+# Motorcycons
 
 Motorcycons is an icon font for the Powersports Industry
 
@@ -17,7 +17,7 @@ Motorcycons is an icon font for the Powersports Industry
 
 [View all Motorcycons »](https://martskin.github.io/motorcycons)
 
-##Documentation
+## Documentation
 [Motorcycons Documentation](https://martskin.github.io/motorcycons)
 
 ###Docs Build
